@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', 'Arial', 'san-serif';
+    font-size: 1.25rem;
+    text-rendering: optimizeLegibility;
+    height: 2000px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 1.875rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 2.5rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 0.125rem solid transparent;
+    transition: border-bottom 0.4s;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 0.125rem solid white;
+}
+
+.hero-textbox {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.671)), url(istockphoto-1262692007-612x612.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(255, 249, 249);
+    background-position: center;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 0.1875rem;
+}
+
+.btn:link,
+.btn:visited {
+    margin-top: 1.25rem;
+    display: inline-block;
+    padding: 0.625rem 0.9375rem;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 12.5rem;
+    color: #fff;
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: rgba(28, 4, 66, 0.925);
+    border: 0.0625rem solid rgba(110, 50, 90, 0.925);
+    color: #fff;
+    margin-right: 0.9375rem;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 0.0625rem solid rgba(110, 50, 90, 0.925);
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgba(110, 50, 90, 0.925);
+}
+
+.btn-full:hover,
+.btn-full:visited {
+    border: 0.0625rem solid #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:visited {
+    color: #fff;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.925);
+}
+
+@media(max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+}
