@@ -1,0 +1,189 @@
+    html {
+        color: rgb(255, 255, 255);
+        font-family: 'Lato', 'Arial', 'san-serif';
+        text-rendering: optimizeLegibility;
+        height: 2000px;
+        font-size: 18px;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header {
+        padding-top: 0%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.671)), url(istockphoto-1262692007-612x612.jpg);
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    nav {
+        display: flex;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav img {
+        padding-bottom: 300px;
+        width: 150px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+    .nav-links {
+        flex: 1;
+        text-align: right;
+    }
+    
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px, 12px;
+        position: relative;
+    }
+    
+    .main-nav {
+        float: right;
+        list-style: none;
+        margin-top: 1.875rem;
+    }
+    
+    .main-nav li {
+        padding-bottom: 50%;
+        display: inline-block;
+        margin-right: 2.5rem;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 90%;
+        border-bottom: 0.125rem solid transparent;
+        transition: border-bottom 0.4s;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: 0.125rem solid white;
+    }
+    
+    .hero-textbox {
+        position: absolute;
+        top: 30%;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .hero-textbox h1 {
+        font-size: 36px;
+    }
+    
+    .hero-textbox p {
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    .header {
+        padding-top: 0%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.671)), url(istockphoto-1262692007-612x612.jpg);
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        cursor: pointer;
+        margin-top: 1.25rem;
+        display: inline-block;
+        padding: 0.625rem 0.9375rem;
+        font-weight: 300;
+        text-decoration: none;
+        border-radius: 12.5rem;
+        color: #fff;
+        transition: background-color 0.4s, border 0.4s, color 0.4s;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited {
+        background-color: rgba(28, 4, 66, 0.925);
+        border: 0.0625rem solid rgba(110, 50, 90, 0.925);
+        color: #fff;
+        margin-right: 0.9375rem;
+    }
+    
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        border: 0.0625rem solid rgba(110, 50, 90, 0.925);
+        color: #fff;
+    }
+    
+    .btn:hover,
+    .btn:active {
+        background-color: rgba(110, 50, 90, 0.925);
+    }
+    
+    .btn-full:hover,
+    .btn-full:visited {
+        border: 0.0625rem solid #fff;
+    }
+    
+    .btn-ghost:hover,
+    .btn-ghost:visited {
+        color: #fff;
+        border: 0.0625rem solid rgba(255, 255, 255, 0.925);
+    }
+    
+    nav .fas {
+        display: none;
+    }
+    
+    @media(max-width:700px) {
+        .hero-textbox h1 {
+            font-size: 15px;
+        }
+        .nav-links ul li {
+            display: block;
+        }
+        .nav-links {
+            position: absolute;
+            background: rgb(110, 50, 90);
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 1s;
+        }
+        .nav-links ul {
+            padding: 30px;
+        }
+        nav .fas {
+            display: block;
+            position: relative;
+            color: #fff;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+    }

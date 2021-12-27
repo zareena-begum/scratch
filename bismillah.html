@@ -1,0 +1,153 @@
+<html lang="en">
+
+<!----head-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-1">
+    <link rel="stylesheet" href="astag.css" type="text/css">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="alhumd.js"></script>
+    <title>EDUCATIONAL WEBSITE</title>
+    <script src="https://kit.fontawesome.com/4b7201084d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!--body-->
+
+<body>
+    <section class="header">
+        <nav>
+            <!---logo----->
+            <a href="bismillah.html"><img src="logo.png"></a>
+
+
+            <div class="nav-links" id="navLinks">
+
+
+
+
+
+                <!--navigation menus-->
+
+                <ul class=" main-nav">
+
+                    <i class="fas fa-times"></i>
+
+
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SUBJECTS</a></li>
+                    <li><a href="#">SIGNUP</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+
+
+                </ul>
+
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+
+
+        </nav>
+
+
+
+
+        <!---textbox at the centre-->
+
+        <div class="hero-textbox">
+            <h1>FIND ALL THE RESOURCES AND SUGGESTED COURSES HERE</h1>
+
+            <button id="btn1" onclick="typeWriter()">Click here!</button>
+
+            <p id="demo"></p>
+
+            <script>
+                var i = 0;
+
+                var txt = 'Is it difficult to find any proper resources to develop your technical skills ?                                    Do not worry,                               try us and get started by searching for your course                        and avail all the suggested resources provided by us.                      All the best and Happy Learning. ';
+                var speed = 50;
+
+                function typeWriter() {
+                    if (i < txt.length) {
+                        document.getElementById("demo").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    }
+                }
+            </script>
+
+
+            <a class="btn btn-full" href="#">GET STARTED</a>
+            <a class="btn btn-ghost" href="#"> SIGN IN</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---scrollbar code-->
+
+    <style>
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 5px;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: rgba(28, 4, 66, 0.925);
+            border-radius: 5px;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: rgba(110, 50, 90, 0.925);
+        }
+    </style>
+
+    </head>
+
+
+
+
+
+    <div class="HTML">
+
+        <style>
+        .HTML {
+                color: aqua;
+            }
+        }
+        </style>
+        <h1>Mr. Devid Smith</h1>
+        <p class="pt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure adipisci harum ducimus accusantium, repudiandae aperiam voluptatum, id ex ratione omnis reiciendis possimus officiis. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae, tenetur quidem eum aliquid vel labore sint placeat ad deserunt consectetur fugit ullam. Eius unde neque ducimus obcaecati ipsum quos vero totam recusandae hic expedita nemo
+            sit, illum harum. Quisquam impedit ullam itaque facere et ad molestiae quod reprehenderit excepturi!
+        </p>
+    </div>
+</body>
+
+</html>
