@@ -271,4 +271,7 @@
                                             width: 50%;
                                         }
                                         
-                                        .btn1 {}
+                                        .course-header img {
+                                            width: 50%;
+                                            height: 50vh;
+                                        }
