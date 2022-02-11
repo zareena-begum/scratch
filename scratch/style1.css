@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  height: 100vh;
+}
+
+
+.abt-container .matter h4 {
+    color: rgb(216, 33, 1);
+}
+
+  .abt-container div.matter,
+  div.abt-img {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .abt-container::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  
+  .abt-container div.matter {
+    padding: 15px;
+    margin-top: 80px;
+    margin-bottom: 35px;
+    font-size: 25px;
+    /* float: left; */
+  }
+  
+  .abt-container div.abt-img img{
+    margin-top: 50px;
+    width: 500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .abt-container a.btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(216, 33, 1);
+    border: 3px solid rgb(216, 33, 1);
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  .abt-container a.btn:hover {
+    color: #fff;
+    background-color: rgb(216, 33, 1);
+    transition: 0.4s;
+    font-style: bold;
+  }
+  
+  div.menu div.parts {
+    float: left;
+    width: 25%;
+    font-size: 22px;
+    margin-top: 25px;
+  }
+  
+  div.menu::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  
+  div.menu div.parts .sub-heading {
+    color: rgb(216, 33, 1);
+    font-weight: bolder;
+  }
+  
+  div.menu div.parts .descript {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .menu a.link {
+    padding-top: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #504f4f;
+  }
+  
+  .menu a.link:hover {
+    color: rgb(216, 33, 1);
+    font-size: 25px;
+    transition: 0.4s;
+  }
+  @media(max-width:700px){
+   
+    .abt-container div.matter,
+    div.abt-img {
+      float: none;
+      width: 100vw;
+      height: 100%;
+      font-size: 16px;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .abt-container div.matter {
+      font-size: 16px;
+      float: none;
+    }
+  
+    .abt-container a.btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 5px 15px;
+      text-decoration: none;
+      font-size: 16px;
+      color: rgb(216, 33, 1);
+      border: 2px solid rgb(216, 33, 1);
+      border-radius: 30px;
+      text-decoration: none;
+    }
+  
+    .abt-container a.btn:hover {
+      color: #fff;
+      background-color: rgb(216, 33, 1);
+      transition: 0.4s;
+      font-style: bold;
+    }  
+  
+  div.menu div.parts {
+    float: none;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  div.menu div.parts .descript {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+
+  .menu a.link {
+      font-size: 10px;
+  }
+
+  .menu a.link:hover{
+      font-size: 12px;
+  }
+
+  .abt-container,.menu {
+      display: block;
+  }
+  }

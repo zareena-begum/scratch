@@ -859,3 +859,7 @@ span.psw {
         width: 100%;
     }
 }
+
+.header1 {
+    background-image: linear-gradient(rgb(172, 162, 26), rgba(25, 113, 185, 0.774), rgb(143, 21, 117));
+}
